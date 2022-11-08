@@ -1,9 +1,12 @@
 # Proyecto de Prestamos RPGLE FULL FREE 📌
 Sistema de prestamos que usa colas para la comunicaciones con la base de datos en formato full free, utilizando la arquitectura MVC.
 
-## Intrucciones Base Datos 💾
+## Instrucciones Base Datos 💾
 _Cambiar la librería ´JBUSTOS2´ de los archivos de tablas SQL por la librería donde se usarán._
 
+
+## Instrucciones AS400 💡
+_Dentro de cada archivo SQLRPGLE se encuentran los comandos de complilación y creacción de dependecias necesarias._
 
 
 ### Debug Daemon (PGM Sometido) 🔗
