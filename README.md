@@ -10,7 +10,7 @@ _Dentro de cada archivo SQLRPGLE se encuentran los comandos de complilación y c
 
 
 ### Debug Daemon (PGM Sometido) 🔗
-1. ` WRKSBS ` para ver los JOB que estan corriendo. Ingresar ´8´ para ver el job.
+1. ` WRKSBS ` para ver los JOB que estan corriendo. Ingresar ` 8 ` para ver el job.
 2. ` 5 ` para ver el número del JOB.
 3. ` STRSRVJOB + F4 ` para iniciar el servicio del nombre del JOB, usuario y número.
 4. ` STRDBG + F4 ` para iniciar modo DEBUG. (*YES en update files production).
