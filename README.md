@@ -2,7 +2,7 @@
 Sistema de prestamos que usa colas para la comunicaciones con la base de datos en formato full free, utilizando la arquitectura MVC.
 
 ## Instrucciones Base Datos 💾
-_Cambiar la librería ´JBUSTOS2´ de los archivos de tablas SQL por la librería donde se usarán._
+_Cambiar la librería `JBUSTOS2` de los archivos de tablas SQL por la librería donde se usarán._
 
 
 ## Instrucciones AS400 💡
