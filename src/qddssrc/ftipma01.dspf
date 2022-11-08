@@ -1,0 +1,45 @@
+     A*%%TS  SD  20221108  161155  JBUSTOS     REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R TIP01
+     A*%%TS  SD  20221108  161155  JBUSTOS     REL-V7R5M0  5770-WDS
+     A                                      CF10(10 'GRABAR')
+     A                                      CF03(03 'SALIR')
+     A                                  1  3SYSNAME
+     A                                      COLOR(YLW)
+     A                                      DSPATR(RI)
+     A                                  2  3USER
+     A                                      COLOR(YLW)
+     A                                      DSPATR(RI)
+     A                                  1 30' Sistema de Préstamos '
+     A                                      DSPATR(RI)
+     A                                      COLOR(YLW)
+     A                                  4 32'TIPOS DE PRÉSTAMOS'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  1 70DATE
+     A                                      EDTCDE(Y)
+     A                                      COLOR(YLW)
+     A                                      DSPATR(RI)
+     A                                  2 70TIME
+     A                                      COLOR(YLW)
+     A                                      DSPATR(RI)
+     A                                  8 11'Tipo Préstamo..........:'
+     A                                 10 11'Nombre.................:'
+     A                                 11 11'Tasa...................:'
+     A                                 12 11'Plazo..................:'
+     A            TIP01PRES      3Y 0B  8 37EDTCDE(4)
+     A                                      DSPATR(HI)
+     A            TIP01NOM      30A  B 10 37DSPATR(HI)
+     A            TIP01TASA      6Y 4B 11 37EDTWRD('  .    ')
+     A                                      DSPATR(HI)
+     A            TIP01PLAZO     3Y 0B 12 37EDTCDE(4)
+     A                                      DSPATR(HI)
+     A                                 23 29'F3: Salir    F10: Grabar'
+     A                                      COLOR(BLU)
+     A                                 22  4'-----------------------------------
+     A                                      ------------------------------------
+     A                                      -----'
+     A                                      COLOR(BLU)
+     A            TIP01MSG      70A  O 21  6COLOR(BLU)
+     A                                      DSPATR(HI)

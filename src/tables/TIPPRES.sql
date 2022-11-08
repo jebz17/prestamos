@@ -1,0 +1,34 @@
+﻿--  Generate SQL 
+--  Version:                   	V7R5M0 220415 
+--  Generated on:              	11/02/22 20:33:01 
+--  Relational Database:       	SEMILLAS 
+--  Standards Option:          	Db2 for i 
+CREATE TABLE JBUSTOS2.TIPPRES ( 
+	TIPOPRE NUMERIC(3, 0) NOT NULL , 
+	NOMBRE VARCHAR(30) CCSID 37 DEFAULT NULL , 
+	TASA NUMERIC(6, 4) DEFAULT NULL , 
+	PLAZO NUMERIC(3, 0) DEFAULT NULL , 
+	USUCREO VARCHAR(10) CCSID 37 DEFAULT NULL , 
+	FECCREO DATE DEFAULT NULL , 
+	USUMOD VARCHAR(10) CCSID 37 DEFAULT NULL , 
+	FECMOD DATE DEFAULT NULL , 
+	CONSTRAINT JBUSTOS2.Q_JBUSTOS2_TIPPRES_TIPOPRE_00001 PRIMARY KEY( TIPOPRE ) )   
+	  
+	RCDFMT TIPPRES    ; 
+  
+LABEL ON TABLE JBUSTOS2.TIPPRES 
+	IS 'Tabla de tipos de prestamos' ; 
+  
+LABEL ON COLUMN JBUSTOS2.TIPPRES 
+( TIPOPRE TEXT IS 'Tipo de préstamo' , 
+	NOMBRE TEXT IS 'Nombre del tipo' , 
+	TASA TEXT IS 'Tasa de interés' , 
+	PLAZO TEXT IS 'Plazo en meses' , 
+	USUCREO TEXT IS 'Usuario que creo' , 
+	FECCREO TEXT IS 'Fecha de creación' , 
+	USUMOD TEXT IS 'Ultimo usuario que modifico' , 
+	FECMOD TEXT IS 'Fecha de última modificación' ) ; 
+  
+GRANT ALTER , DELETE , INDEX , INSERT , REFERENCES , SELECT , UPDATE   
+ON JBUSTOS2.TIPPRES TO JBUSTOS WITH GRANT OPTION ; 
+  

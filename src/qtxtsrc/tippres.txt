@@ -1,0 +1,11 @@
+            DCL-DS TRAMA QUALIFIED;
+                ACCION CHAR(2);
+                RESTO  CHAR(4998);
+            END-DS;
+
+            DCL-PR PROCESA_TIPPRES;
+                PBIB   VARCHAR(10);
+                PCOLA  VARCHAR(10);
+                PTRAMA LIKEDS(TRAMA);
+            END-PR;
+
